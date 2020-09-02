@@ -1,0 +1,129 @@
+@import"colors";
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  display:flex;
+  flex-direction:column;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+
+
+
+button{
+  height:44px;
+  width:130px;
+
+  font-size:12px;
+
+  border-radius:10px;
+  border: 1px solid $orange;
+
+  box-shadow:0 1px $orange;
+
+  background-color:white;
+
+}
+button:click{
+  
+}
+button:active{
+  transform:translateY(1px);
+}
+
+.login{
+  color:$orange;
+
+  &:hover {
+    transition:1s;
+    background-color:$green;
+    border:1px solid $green;
+    color:white;
+    box-shadow:0 2px $green;
+    cursor: pointer;
+  }
+  &:not(:hover){
+    transition:1s;
+  }
+}
+.register{
+  color:white;
+  background-color:$orange;
+
+  &:hover {
+  transition:1s;
+  background-color:$green;
+  border:1px solid $green;
+  cursor: pointer;
+  }
+  &:not(:hover){
+    transition:1s;
+  } 
+}
+
+
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}

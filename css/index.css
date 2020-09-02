@@ -1,0 +1,322 @@
+header {
+  width: 100;
+  height: auto;
+  padding: 40px 108px 40px 185px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+header #logo {
+  width: 50px;
+  height: 50px;
+}
+header #logo:hover {
+  cursor: pointer;
+}
+header .nav {
+  width: auto;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justifu-content: space-between;
+}
+header .nav__element {
+  height: 44px;
+  width: auto;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #c4c9d5;
+}
+header .nav__element-active {
+  color: #202336;
+}
+header .nav__element:hover {
+  color: #fb8f1d;
+  transition: 1s;
+  cursor: pointer;
+}
+header .nav__element:not(:hover) {
+  transition: 1s;
+}
+@media screen and (max-width: 840px) {
+  header .nav__element {
+    display: none;
+  }
+}
+header .nav__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 295px;
+  height: 44px;
+  padding: 0 0 0 12px;
+}
+header .nav__buttons button {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 840px) {
+  header .nav__buttons {
+    display: none;
+  }
+}
+header .nav_bar .hamburger-menu #menu__toggle {
+  opacity: 0;
+}
+header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu {
+  visibility: visible;
+  top: 0;
+}
+header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__shadow {
+  visibility: visible;
+}
+header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu {
+  position: fixed;
+}
+header .nav_bar .hamburger-menu .menu__btn {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  right: 7.5%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+header .nav_bar .hamburger-menu .menu__btn > span, header .nav_bar .hamburger-menu .menu__btn > span::before, header .nav_bar .hamburger-menu .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fb8f1d;
+  transition-duration: 0.25s;
+}
+header .nav_bar .hamburger-menu .menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+header .nav_bar .hamburger-menu .menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+@media screen and (max-width: 1000px) {
+  header .nav_bar .hamburger-menu .menu__btn {
+    display: flex;
+  }
+}
+header .nav_bar .hamburger-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  visibility: hidden;
+  right: 0;
+  top: -100%;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 100px 0 50px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+  z-index: 900;
+}
+header .nav_bar .hamburger-menu .menu__wrapper .menu__item {
+  display: block;
+  padding: 12px 24px;
+  margin: 0 auto;
+  text-align: left;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+header .nav_bar .hamburger-menu .menu__wrapper .menu__item:hover {
+  color: #fb8f1d;
+}
+header .nav_bar .hamburger-menu .menu__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 100px;
+  padding: 0 24px;
+}
+header .nav_bar .hamburger-menu .menu__buttons button {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1000px) {
+  header .nav_bar .hamburger-menu .menu {
+    display: none;
+  }
+}
+header .nav_bar .hamburger-menu .menu__shadow {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: 100;
+  transition: 0.2s;
+}
+@media screen and (min-width: 1000px) {
+  header .nav_bar .hamburger-menu .menu__shadow {
+    display: none;
+  }
+}
+@media screen and (min-width: 840px) {
+  header .nav_bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1030px) {
+  header {
+    padding: 40px 108px;
+  }
+}
+@media screen and (max-width: 950px) {
+  header {
+    padding: 40px 50px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  height: 44px;
+  width: 130px;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid #fb8f1d;
+  box-shadow: 0 1px #fb8f1d;
+  background-color: white;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.login {
+  color: #fb8f1d;
+}
+.login:hover {
+  transition: 1s;
+  background-color: #1abe84;
+  border: 1px solid #1abe84;
+  color: white;
+  box-shadow: 0 2px #1abe84;
+  cursor: pointer;
+}
+.login:not(:hover) {
+  transition: 1s;
+}
+
+.register {
+  color: white;
+  background-color: #fb8f1d;
+}
+.register:hover {
+  transition: 1s;
+  background-color: #1abe84;
+  border: 1px solid #1abe84;
+  cursor: pointer;
+}
+.register:not(:hover) {
+  transition: 1s;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}

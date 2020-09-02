@@ -6,14 +6,46 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/d6e76c230a.css">
 
 </head>
 <body>
 	<header>
+		<img id="logo" src="img/logo.png">
+		<div class="nav">
+			<div class="nav__element nav__element-active">Home</div>
+			<div class="nav__element">Destinations</div>
+			<div class="nav__element">About</div>
+			<div class="nav__element">Partner</div>
+			
+			<div class="nav__buttons">
+				<button class="login">Login</button>
+				<button class="register">Register</button>
+			</div>
+		</div>
+		<div class="nav_bar">
+		    <div class="hamburger-menu">
+		        <input id="menu__toggle" type="checkbox" />
+
+		        <label class="menu__btn" for="menu__toggle">
+		            <span></span>
+		        </label>
+
+		        <ul class="menu">
+		        	<div class="menu__wrapper">
+		    			<li><a class="menu__item" href="#">Destinations</a></li>
+		            	<li><a class="menu__item" href="#">About</a></li>
+		            	<li><a class="menu__item" href="#">Partner</a></li>
+		        	</div>
+		        	<div class="menu__buttons">
+		        		<button class="login">Login</button>
+						<button class="register">Register</button>	
+		        	</div>
+		        </ul>
+		    </div>
+		</div>
 	</header>
-	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
