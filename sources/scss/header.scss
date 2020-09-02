@@ -1,42 +1,42 @@
-header{
-	width:100;
+.header{
+	width:100%;
 	height:auto;
 
-	padding:40px 108px 40px 185px;
+	padding: $margin-top 108px $margin-top 185px;
 
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
 
-	border:1px solid black;
+	border:1px solid $black;
 
-	#logo{
-		width:50px;
-		height:50px;
+	&__logo{
+		width:$item-height;
+		height:$item-height;
 		&:hover{
 			cursor: pointer;
 		}
 	}
 	.nav{
 		width:auto;
-		height:44px;
+		height:auto;
 			
 		display:flex;
 		flex-direction:row;
-		justifu-content:space-between;
+		justify-content:space-between;
 
-		&__element{
-			height:44px;
+		&__item{
+			height:$item-height;
 			width:auto;
 
 			padding:14px 18px;
 
-			font-size:16px;
+			font-size: $header-fs;
 			font-family: 'Roboto', sans-serif;
 			font-weight:600;
 			color:$gray;
 
-			&-active{
+			&--active{
 				color:$dark-blue;
 			}
 
@@ -48,7 +48,7 @@ header{
 			&:not(:hover){
     			transition:1s;
   			}
-			@media screen and (max-width: 840px){
+			@media screen and (max-width: 992px){
 				&{
 					display:none;		
 				}
@@ -60,18 +60,18 @@ header{
 			justify-content:space-between;
 			
 			width:295px;
-			height:44px;
+			height:$item-height;
 
 			padding:0 0 0 12px;
 			
 			button{
 				margin:0;
 
-				font-size:16px;
+				font-size:$header-fs;
 				font-family: 'Roboto', sans-serif;				
 				font-weight:600;
 			}
-			@media screen and (max-width: 840px){
+			@media screen and (max-width: 992px){
 				&{
 					display:none;		
 				}
@@ -109,16 +109,16 @@ header{
 				display: none;
 			    align-items: center;
 			    position: absolute;
-			    top: 40px;
+			    top: $margin-top;
 			    right: 7.5%;
 
-			    width: 50px;
-			    height: 50px;
+			    width: $item-height;
+			    height: $item-height;
 
 			    padding: 0;
 
 			    cursor: pointer;
-			    z-index: 1000;
+			    z-index: 3;
 
 				& > span,& > span::before,& > span::after {
 					display: block;
@@ -142,14 +142,13 @@ header{
 					top: 8px;
 				}
 
-				@media screen and (max-width:1000px){
+				@media screen and (max-width:1200px){
 					display:flex;
 				}
 			}	
 			.menu{
 				display: flex;
 				flex-direction:column;
-				justify-content:space-between; 
 				position: fixed;
 				visibility: hidden;
 				right: 0;
@@ -163,53 +162,55 @@ header{
 
 				list-style: none;
 
-				background-color: #ECEFF1;
-				box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+				background-color: $menu-background;
+				box-shadow: 1px 0px 6px $box-shadow;
 
 				transition-duration: .25s;
 
-				z-index:900;
+				z-index:2;
 				
-				&__wrapper{
-					.menu__item{
-						display: block;
-						padding: 12px 24px;
-						margin: 0 auto;
-						text-align: left;
-						color: #333;
-
-						font-family: 'Roboto', sans-serif;
-						font-size: 20px;
-						font-weight: 600;
-
-						text-decoration: none;
-
-						transition-duration: .25s;
-
-						&:hover {
-							color: $orange;
-						}
-					}
-				}
-				&__buttons{
-					display: flex;
-					flex-direction:column;
-					justify-content:space-around; 
-
-					width:200px;
-					height:100px;
-
-					padding:0 24px;
-
-					button{
-						width:100%;
-						font-family: 'Roboto', sans-serif;
-						font-size: 16px;
-						font-weight: 600;
-				 	}
-				}
 	
-				@media screen and (min-width: 1000px) {
+				&__item{
+					display: block;
+					padding: 12px 24px;
+					margin: 0 auto;
+					text-align: left;
+					color: $gray;
+
+					font-family: 'Roboto', sans-serif;
+					font-size: $menu-fs;
+					font-weight: 600;
+
+					text-decoration: none;
+
+					transition-duration: .25s;
+
+					&:hover {
+						color: $orange;
+					}
+					
+				}
+				button{
+					width:160px;
+					margin: 0 auto;
+
+					font-family: 'Roboto', sans-serif;
+					font-size: $header-fs;
+					font-weight: 600;
+				 }
+				.login{
+					position:absolute;
+					top:77%;
+					left:10%;
+				}
+				.register{
+					position:absolute;
+					top:87%;
+					left:10%;
+				}
+				
+
+				@media screen and (min-width: 1200px) {
 					&{
 						display: none;
 					}
@@ -226,13 +227,13 @@ header{
 				width: 100%;
 				height: 100%;
 
-				background-color: rgba(0, 0, 0, 0.54);
+				background-color: $white-gray;
 
-				z-index:100;
+				z-index:1;
 
 				transition: .2s;
 
-				@media screen and (min-width: 1000px) {
+				@media screen and (min-width: 1200px) {
 					&{
 						display: none;
 					}
@@ -240,20 +241,20 @@ header{
 			}
 		}
 
-		@media screen and (min-width:840px){
+		@media screen and (min-width:992px){
 			&{
 				display:none;
 			}
 		} 
 	}
-	@media screen and (max-width: 1030px){
+	@media screen and (max-width: 1200px){
 		&{
-			padding:40px 108px;		
+			padding:$margin-top 108px;		
 		}
 	}
-	@media screen and (max-width: 950px){
+	@media screen and (max-width: 992px){
 		&{
-			padding:40px 50px;		
+			padding:$margin-top 50px;		
 		}
 	}
 }

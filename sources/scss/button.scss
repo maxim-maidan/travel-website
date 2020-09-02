@@ -1,0 +1,51 @@
+@import"constants";
+button{
+  height:$item-height;
+  width:130px;
+
+  font-size:$button-fs;
+
+  border-radius:10px;
+  border: 1px solid $orange;
+
+  box-shadow: 0 1px $orange;
+
+  background-color:$white;
+
+}
+button:click{
+  
+}
+button:active{
+  transform:translateY(1px);
+}
+
+.login{
+  color:$orange;
+
+  &:hover {
+    transition:1s;
+    background-color:$green;
+    border:1px solid $green;
+    color:white;
+    box-shadow:0 2px $green;
+    cursor: pointer;
+  }
+  &:not(:hover){
+    transition:1s;
+  }
+}
+.register{
+  color:white;
+  background-color:$orange;
+
+  &:hover {
+  transition:1s;
+  background-color:$green;
+  border:1px solid $green;
+  cursor: pointer;
+  }
+  &:not(:hover){
+    transition:1s;
+  } 
+}

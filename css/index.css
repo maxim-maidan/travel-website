@@ -1,95 +1,95 @@
-header {
-  width: 100;
+.header {
+  width: 100%;
   height: auto;
   padding: 40px 108px 40px 185px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
-header #logo {
+.header__logo {
   width: 50px;
   height: 50px;
 }
-header #logo:hover {
+.header__logo:hover {
   cursor: pointer;
 }
-header .nav {
+.header .nav {
   width: auto;
-  height: 44px;
+  height: auto;
   display: flex;
   flex-direction: row;
-  justifu-content: space-between;
+  justify-content: space-between;
 }
-header .nav__element {
-  height: 44px;
+.header .nav__item {
+  height: 50px;
   width: auto;
   padding: 14px 18px;
-  font-size: 16px;
+  font-size: 1.14em;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #c4c9d5;
+  color: #808080;
 }
-header .nav__element-active {
+.header .nav__item--active {
   color: #202336;
 }
-header .nav__element:hover {
+.header .nav__item:hover {
   color: #fb8f1d;
   transition: 1s;
   cursor: pointer;
 }
-header .nav__element:not(:hover) {
+.header .nav__item:not(:hover) {
   transition: 1s;
 }
-@media screen and (max-width: 840px) {
-  header .nav__element {
+@media screen and (max-width: 992px) {
+  .header .nav__item {
     display: none;
   }
 }
-header .nav__buttons {
+.header .nav__buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 295px;
-  height: 44px;
+  height: 50px;
   padding: 0 0 0 12px;
 }
-header .nav__buttons button {
+.header .nav__buttons button {
   margin: 0;
-  font-size: 16px;
+  font-size: 1.14em;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
-@media screen and (max-width: 840px) {
-  header .nav__buttons {
+@media screen and (max-width: 992px) {
+  .header .nav__buttons {
     display: none;
   }
 }
-header .nav_bar .hamburger-menu #menu__toggle {
+.header .nav_bar .hamburger-menu #menu__toggle {
   opacity: 0;
 }
-header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+.header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
-header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+.header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
-header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+.header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu {
+.header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu {
   visibility: visible;
   top: 0;
 }
-header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__shadow {
+.header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu__shadow {
   visibility: visible;
 }
-header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu {
+.header .nav_bar .hamburger-menu #menu__toggle:checked ~ .menu {
   position: fixed;
 }
-header .nav_bar .hamburger-menu .menu__btn {
+.header .nav_bar .hamburger-menu .menu__btn {
   display: none;
   align-items: center;
   position: absolute;
@@ -99,9 +99,9 @@ header .nav_bar .hamburger-menu .menu__btn {
   height: 50px;
   padding: 0;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 3;
 }
-header .nav_bar .hamburger-menu .menu__btn > span, header .nav_bar .hamburger-menu .menu__btn > span::before, header .nav_bar .hamburger-menu .menu__btn > span::after {
+.header .nav_bar .hamburger-menu .menu__btn > span, .header .nav_bar .hamburger-menu .menu__btn > span::before, .header .nav_bar .hamburger-menu .menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -109,23 +109,22 @@ header .nav_bar .hamburger-menu .menu__btn > span, header .nav_bar .hamburger-me
   background-color: #fb8f1d;
   transition-duration: 0.25s;
 }
-header .nav_bar .hamburger-menu .menu__btn > span::before {
+.header .nav_bar .hamburger-menu .menu__btn > span::before {
   content: "";
   top: -8px;
 }
-header .nav_bar .hamburger-menu .menu__btn > span::after {
+.header .nav_bar .hamburger-menu .menu__btn > span::after {
   content: "";
   top: 8px;
 }
-@media screen and (max-width: 1000px) {
-  header .nav_bar .hamburger-menu .menu__btn {
+@media screen and (max-width: 1200px) {
+  .header .nav_bar .hamburger-menu .menu__btn {
     display: flex;
   }
 }
-header .nav_bar .hamburger-menu .menu {
+.header .nav_bar .hamburger-menu .menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: fixed;
   visibility: hidden;
   right: 0;
@@ -138,43 +137,46 @@ header .nav_bar .hamburger-menu .menu {
   background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
-  z-index: 900;
+  z-index: 2;
 }
-header .nav_bar .hamburger-menu .menu__wrapper .menu__item {
+.header .nav_bar .hamburger-menu .menu__item {
   display: block;
   padding: 12px 24px;
   margin: 0 auto;
   text-align: left;
-  color: #333;
+  color: #808080;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
 }
-header .nav_bar .hamburger-menu .menu__wrapper .menu__item:hover {
+.header .nav_bar .hamburger-menu .menu__item:hover {
   color: #fb8f1d;
 }
-header .nav_bar .hamburger-menu .menu__buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 200px;
-  height: 100px;
-  padding: 0 24px;
-}
-header .nav_bar .hamburger-menu .menu__buttons button {
-  width: 100%;
+.header .nav_bar .hamburger-menu .menu button {
+  width: 160px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1.14em;
   font-weight: 600;
 }
-@media screen and (min-width: 1000px) {
-  header .nav_bar .hamburger-menu .menu {
+.header .nav_bar .hamburger-menu .menu .login {
+  position: absolute;
+  top: 77%;
+  left: 10%;
+}
+.header .nav_bar .hamburger-menu .menu .register {
+  position: absolute;
+  top: 87%;
+  left: 10%;
+}
+@media screen and (min-width: 1200px) {
+  .header .nav_bar .hamburger-menu .menu {
     display: none;
   }
 }
-header .nav_bar .hamburger-menu .menu__shadow {
+.header .nav_bar .hamburger-menu .menu__shadow {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -183,28 +185,71 @@ header .nav_bar .hamburger-menu .menu__shadow {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.54);
-  z-index: 100;
+  z-index: 1;
   transition: 0.2s;
 }
-@media screen and (min-width: 1000px) {
-  header .nav_bar .hamburger-menu .menu__shadow {
+@media screen and (min-width: 1200px) {
+  .header .nav_bar .hamburger-menu .menu__shadow {
     display: none;
   }
 }
-@media screen and (min-width: 840px) {
-  header .nav_bar {
+@media screen and (min-width: 992px) {
+  .header .nav_bar {
     display: none;
   }
 }
-@media screen and (max-width: 1030px) {
-  header {
+@media screen and (max-width: 1200px) {
+  .header {
     padding: 40px 108px;
   }
 }
-@media screen and (max-width: 950px) {
-  header {
+@media screen and (max-width: 992px) {
+  .header {
     padding: 40px 50px;
   }
+}
+
+button {
+  height: 50px;
+  width: 130px;
+  font-size: 0.8em;
+  border-radius: 10px;
+  border: 1px solid #fb8f1d;
+  box-shadow: 0 1px #fb8f1d;
+  background-color: #FFFFFF;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.login {
+  color: #fb8f1d;
+}
+.login:hover {
+  transition: 1s;
+  background-color: #1abe84;
+  border: 1px solid #1abe84;
+  color: white;
+  box-shadow: 0 2px #1abe84;
+  cursor: pointer;
+}
+.login:not(:hover) {
+  transition: 1s;
+}
+
+.register {
+  color: white;
+  background-color: #fb8f1d;
+}
+.register:hover {
+  transition: 1s;
+  background-color: #1abe84;
+  border: 1px solid #1abe84;
+  cursor: pointer;
+}
+.register:not(:hover) {
+  transition: 1s;
 }
 
 * {
@@ -249,49 +294,6 @@ textarea {
 
 input::-ms-clear {
   display: none;
-}
-
-button {
-  height: 44px;
-  width: 130px;
-  font-size: 12px;
-  border-radius: 10px;
-  border: 1px solid #fb8f1d;
-  box-shadow: 0 1px #fb8f1d;
-  background-color: white;
-}
-
-button:active {
-  transform: translateY(1px);
-}
-
-.login {
-  color: #fb8f1d;
-}
-.login:hover {
-  transition: 1s;
-  background-color: #1abe84;
-  border: 1px solid #1abe84;
-  color: white;
-  box-shadow: 0 2px #1abe84;
-  cursor: pointer;
-}
-.login:not(:hover) {
-  transition: 1s;
-}
-
-.register {
-  color: white;
-  background-color: #fb8f1d;
-}
-.register:hover {
-  transition: 1s;
-  background-color: #1abe84;
-  border: 1px solid #1abe84;
-  cursor: pointer;
-}
-.register:not(:hover) {
-  transition: 1s;
 }
 
 a,
