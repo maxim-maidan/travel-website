@@ -1,26 +1,23 @@
 @import"constants";
 button{
-  height:$item-height;
-  width:130px;
+  margin:1px 0 9px 17px;
 
-  font-size:$button-fs;
+  font-size:$header-fs;
+  font-family: 'Roboto', sans-serif;        
+  font-weight:600;
 
   border-radius:10px;
   border: 1px solid $orange;
-
-  box-shadow: 0 1px $orange;
+  box-shadow: 1px 1px $orange;
 
   background-color:$white;
 
 }
-button:click{
-  
-}
 button:active{
   transform:translateY(1px);
 }
-
 .login{
+  padding: 12px 43px;
   color:$orange;
 
   &:hover {
@@ -34,8 +31,14 @@ button:active{
   &:not(:hover){
     transition:1s;
   }
+  @media screen and(max-width:992px){
+    &{
+        padding: 12px 60px;
+      }
+  }
 }
 .register{
+  padding: 12px 35px;
   color:white;
   background-color:$orange;
 
@@ -47,5 +50,10 @@ button:active{
   }
   &:not(:hover){
     transition:1s;
+  }
+  @media screen and(max-width:992px){
+    &{
+        padding: 12px 50px;
+      }
   } 
 }
