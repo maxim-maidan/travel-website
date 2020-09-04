@@ -1,0 +1,59 @@
+@import"constants";
+button{
+  margin:1px 0 9px 17px;
+
+  font-size:$header-fs;
+  font-family: 'Roboto', sans-serif;        
+  font-weight:600;
+
+  border-radius:10px;
+  border: 1px solid $orange;
+  box-shadow: 1px 1px $orange;
+
+  background-color:$white;
+
+}
+button:active{
+  transform:translateY(1px);
+}
+.login{
+  padding: 12px 43px;
+  color:$orange;
+
+  &:hover {
+    transition:1s;
+    background-color:$green;
+    border:1px solid $green;
+    color:white;
+    box-shadow:0 2px $green;
+    cursor: pointer;
+  }
+  &:not(:hover){
+    transition:1s;
+  }
+  @media screen and(max-width:992px){
+    &{
+        padding: 12px 60px;
+      }
+  }
+}
+.register{
+  padding: 12px 35px;
+  color:white;
+  background-color:$orange;
+
+  &:hover {
+  transition:1s;
+  background-color:$green;
+  border:1px solid $green;
+  cursor: pointer;
+  }
+  &:not(:hover){
+    transition:1s;
+  }
+  @media screen and(max-width:992px){
+    &{
+        padding: 12px 50px;
+      }
+  } 
+}
