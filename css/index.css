@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid #000000;
 }
 .header__logo {
   width: 50px;
@@ -45,7 +44,7 @@
   align-items: center;
   position: absolute;
   top: 40px;
-  right: 7.5%;
+  right: 50px;
   width: 50px;
   height: 50px;
   padding: 0;
@@ -192,11 +191,11 @@ button:active {
   transform: translateY(1px);
 }
 
-.login {
+.white {
   padding: 12px 43px;
   color: #fb8f1d;
 }
-.login:hover {
+.white:hover {
   transition: 1s;
   background-color: #1abe84;
   border: 1px solid #1abe84;
@@ -204,31 +203,32 @@ button:active {
   box-shadow: 0 2px #1abe84;
   cursor: pointer;
 }
-.login:not(:hover) {
+.white:not(:hover) {
   transition: 1s;
 }
 @media screen and (max-width: 992px) {
-  .login {
+  .white {
     padding: 12px 60px;
   }
 }
 
-.register {
+.orange {
   padding: 12px 35px;
   color: white;
   background-color: #fb8f1d;
 }
-.register:hover {
+.orange:hover {
   transition: 1s;
   background-color: #1abe84;
   border: 1px solid #1abe84;
   cursor: pointer;
+  box-shadow: 1px 1px #1abe84;
 }
-.register:not(:hover) {
+.orange:not(:hover) {
   transition: 1s;
 }
 @media screen and (max-width: 992px) {
-  .register {
+  .orange {
     padding: 12px 50px;
   }
 }
@@ -302,4 +302,121 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+.finder {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 188px;
+}
+.finder .explore {
+  display: flex;
+  flex-direction: column;
+}
+.finder .explore__title {
+  padding: 69px 0 0 0;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 5em;
+  letter-spacing: -0.9px;
+  line-height: 1.16;
+  color: #202336;
+}
+@media screen and (max-width: 576px) {
+  .finder .explore__title {
+    font-size: 3em;
+    width: 100%;
+    padding: 69px 50px 0;
+  }
+}
+.finder .explore__subtitle {
+  padding: 72px 0 0 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  letter-spacing: -0.1px;
+  line-height: 1.14;
+  color: #202336;
+}
+@media screen and (max-width: 576px) {
+  .finder .explore__subtitle {
+    font-size: 1em;
+    padding: 72px 50px 0;
+  }
+}
+.finder .explore__line {
+  margin: 20px 0 0 3px;
+  width: 34px;
+  background-color: #202336;
+  height: 3.5px;
+}
+@media screen and (max-width: 576px) {
+  .finder .explore__line {
+    margin: 20px 0 0 50px;
+  }
+}
+.finder .explore .input {
+  width: 470px;
+  height: 176px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 49px 0 0 0;
+}
+.finder .explore .input__ittem {
+  width: 220px;
+  height: 50px;
+  padding: 2px 20px 0;
+  border-radius: 5px;
+  font-size: 1.15em;
+}
+@media screen and (max-width: 576px) {
+  .finder .explore .input__ittem {
+    width: 45%;
+    padding: 1px 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .finder .explore .input {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 0.7em;
+  }
+}
+.finder .explore .orange {
+  margin: 12px 290px 0 0;
+  padding: 15.5px 0;
+}
+@media screen and (max-width: 576px) {
+  .finder .explore .orange {
+    width: 50%;
+    margin: 0 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .finder .explore {
+    padding: 0;
+  }
+}
+.finder img {
+  width: 770px;
+  height: auto;
+  margin: 0 0 0 90px;
+}
+@media screen and (max-width: 1200px) {
+  .finder img {
+    margin: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .finder {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
 }
