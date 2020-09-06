@@ -1,12 +1,21 @@
 @import"constants";
 .finder{
+	width:100%;
+
+	background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position:right;
+
 	display:flex;
 	flex-direction:row;
 	padding: 0 0 0 $padding-left;
+
 	.explore{
 		display:flex;	
 		flex-direction:column;
-		&__title{
+		h1{
+			width:470px;
 			padding:69px 0 0 0;
 
 			font-family:serif;
@@ -24,58 +33,69 @@
 				}
 			}
 		}
-		&__subtitle{
-			padding:72px 0 0 2px;
-
-			font-family: 'Roboto', sans-serif;
-			font-weight:600;
-			font-size: $subtitle;
-			letter-spacing: -0.1px;
-			line-height:1.14;
-			color:$dark-blue;
-
-			@media screen and (max-width:576px){
-				&{
-					font-size: $subtitle-phone;
-					padding:72px 50px 0;
-				}
-			}
-		}
-		&__line{
-			margin:20px 0 0 3px;
-			width:34px;
-			background-color:$dark-blue;
-			height:3.5px;
-
-			@media screen and (max-width:576px){
-				&{
-					margin:20px 0 0 50px;
-				}
-			}
-		}
 		.input{
 			width:470px;
-			height:176px;
+			height:auto;
 
 			display:flex;
 			flex-direction:row;
 			justify-content:space-between;
 			flex-wrap:wrap;
 
-			margin:49px 0 0 0;
-			&__ittem{
-				width:220px;
-				height:50px;
-				padding:2px 20px 0;
+			h1{
+				width:100%;
+				padding:72px 0 0 2px;
 
-				border-radius:5px;
-
-				font-size:$select-fs;
+				font-family: 'Roboto', sans-serif;
+				font-weight:600;
+				font-size: $subtitle;
+				letter-spacing: -0.1px;
+				line-height:1.14;
+				color:$dark-blue;
 
 				@media screen and (max-width:576px){
 					&{
-						width:45%;
-						padding:1px 10px;
+						font-size: $subtitle-phone;
+						padding:72px 0 0 0;
+					}
+				}
+			}
+			&__line{
+				margin:20px 0 50px 3px;
+				width:34px;
+				background-color:$dark-blue;
+				height:3.5px;
+
+				@media screen and (max-width:576px){
+					&{
+						margin:20px 0;
+					}
+				}
+			}
+			form{
+				width:100%;
+
+				display:flex;
+				flexlex-direction:row;
+				justify-content:space-between;
+				flex-wrap:wrap;
+				
+				.item{
+					width: calc(50% - 10px);
+					height:50px;
+					padding:0 31px 0;
+					margin:0 0 33px 0;
+
+					border-radius:5px;
+
+					font-size:$select-fs;
+
+					@media screen and (max-width:576px){
+						&{
+							width: 100%;
+							padding:1px 10px;
+							margin: 10px 0 0 0;
+						}
 					}
 				}
 			}
@@ -84,47 +104,36 @@
 					width:100%;
 					justify-content:space-between;
 					padding:0 50px;
-					font-size:$select-phone;
 				}
 			}
 		}
 		.orange{
-			margin:12px 290px 0 0;
-			padding:15.5px 0;
+			margin:20px 0;
+			padding:15.5px 60px;
 
 			@media screen and (max-width:576px){
 				&{
-					width:50%;
-					margin: 0 25%;
+					margin: 20px auto;
 				}
-			}
-		}
-		@media screen and (max-width:1200px){
-			&{
-				padding: 0;
-			}
-		}
-	}
-
-	img{
-		width:770px;
-		height:auto;
-
-		margin:0 0 0 90px;
-
-		@media screen and (max-width:1200px){
-			&{
-				margin:0;
-				width:90%;
 			}
 		}
 	}
 	@media screen and (max-width:1200px){
 		&{
 			display:flex;
-			flex-direction:row-reverse;
+			flex-direction:row;
 			flex-wrap:wrap;
+			justify-content:start;
+			
+			padding: 0 0 0 60px;
+
+			background-size: auto 80%;
+		}
+	}
+	@media screen and (max-width:992px){
+		&{
 			justify-content:space-around;
+			background-image: none;
 			padding: 0;
 		}
 	}
