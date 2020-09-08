@@ -8,7 +8,6 @@ button{
 
   border-radius:10px;
   border: 1px solid $orange;
-  box-shadow: 1px 1px $orange;
 
   background-color:$white;
 
@@ -17,8 +16,8 @@ button:active{
   transform:translateY(1px);
 }
 .white{
-  padding: 12px 43px;
   color:$orange;
+  box-shadow: 1px 1px $orange;
 
   &:hover {
     transition:1s;
@@ -38,7 +37,6 @@ button:active{
   }
 }
 .orange{
-  padding: 12px 35px;
   color:white;
   background-color:$orange;
 
@@ -47,7 +45,6 @@ button:active{
   background-color:$green;
   border:1px solid $green;
   cursor: pointer;
-  box-shadow: 1px 1px $green;
   }
   &:not(:hover){
     transition:1s;
