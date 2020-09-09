@@ -16,7 +16,7 @@ button{
 button:active{
   transform:translateY(1px);
 }
-.login{
+.white{
   padding: 12px 43px;
   color:$orange;
 
@@ -37,7 +37,7 @@ button:active{
       }
   }
 }
-.register{
+.orange{
   padding: 12px 35px;
   color:white;
   background-color:$orange;
@@ -47,6 +47,7 @@ button:active{
   background-color:$green;
   border:1px solid $green;
   cursor: pointer;
+  box-shadow: 1px 1px $green;
   }
   &:not(:hover){
     transition:1s;
