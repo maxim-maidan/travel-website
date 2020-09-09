@@ -1,0 +1,174 @@
+.finder {
+  width: 100%;
+  background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 0 0 188px;
+}
+
+.finder .explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.finder .explore h1 {
+  width: 470px;
+  padding: 69px 0 0 0;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 5em;
+  letter-spacing: -0.9px;
+  line-height: 1.16;
+  color: #202336;
+}
+
+@media screen and (max-width: 576px) {
+  .finder .explore h1 {
+    font-size: 2em;
+    width: 100%;
+    padding: 69px 50px 0;
+  }
+}
+
+.finder .explore .input {
+  width: 470px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.finder .explore .input h1 {
+  width: 100%;
+  padding: 72px 0 0 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  letter-spacing: -0.1px;
+  line-height: 1.14;
+  color: #202336;
+}
+
+@media screen and (max-width: 576px) {
+  .finder .explore .input h1 {
+    font-size: 1em;
+    padding: 72px 0 0 0;
+  }
+}
+
+.finder .explore .input__line {
+  margin: 20px 0 50px 3px;
+  width: 34px;
+  background-color: #202336;
+  height: 3.5px;
+}
+
+@media screen and (max-width: 576px) {
+  .finder .explore .input__line {
+    margin: 20px 0;
+  }
+}
+
+.finder .explore .input form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.finder .explore .input form .item {
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 0 31px 0;
+  margin: 0 0 33px 0;
+  border-radius: 5px;
+  font-size: 1.15em;
+}
+
+@media screen and (max-width: 576px) {
+  .finder .explore .input form .item {
+    width: 100%;
+    padding: 1px 10px;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .finder .explore .input {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 50px;
+  }
+}
+
+.finder .explore .orange {
+  margin: 20px 0;
+  padding: 15.5px 60px;
+}
+
+@media screen and (max-width: 576px) {
+  .finder .explore .orange {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .finder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0 0 0 60px;
+    background-size: auto 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .finder {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-image: none;
+    padding: 0;
+  }
+}

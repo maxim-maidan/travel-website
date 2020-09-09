@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row-reverse;
 
-    padding: 310px 171px 100px 0;
+    padding: 410px 171px 100px 0;
 
 	background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
 	background-repeat: no-repeat;
@@ -16,7 +16,7 @@
     .content{
         width:448px;
         h1{
-            font-size: $way-title;
+            font-size: $medium-title;
             font-weight: 600;
             line-height: 1.35;
             color: $black;
