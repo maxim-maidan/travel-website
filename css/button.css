@@ -1,0 +1,84 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button {
+  margin: 1px 0 9px 17px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid #fb8f1d;
+  background-color: #ffffff;
+}
+
+button:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.white-button {
+  color: #fb8f1d;
+  -webkit-box-shadow: 1px 1px #fb8f1d;
+          box-shadow: 1px 1px #fb8f1d;
+}
+
+.white-button:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #1abe84;
+  border: 1px solid #1abe84;
+  color: white;
+  -webkit-box-shadow: 0 2px #1abe84;
+          box-shadow: 0 2px #1abe84;
+  cursor: pointer;
+}
+
+.white-button:not(:hover) {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 992px) {
+  .white-button {
+    padding: 12px 60px;
+  }
+}
+
+.orange-button {
+  color: white;
+  background-color: #fb8f1d;
+}
+
+.orange-button:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #1abe84;
+  border: 1px solid #1abe84;
+  cursor: pointer;
+}
+
+.orange-button:not(:hover) {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 992px) {
+  .orange-button {
+    padding: 12px 50px;
+  }
+}

@@ -1,3 +1,21 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .destinations {
   padding: 308px 156px 200px 238px;
   display: -webkit-box;
@@ -89,7 +107,7 @@
   padding: 15px 0 0 4px;
   font-family: sans-serif;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .destinations .list__item .box h1 {
@@ -140,6 +158,24 @@
   }
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .way {
   width: 100%;
   height: auto;
@@ -150,8 +186,8 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  padding: 410px 171px 100px 0;
-  background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
+  padding: 310px 171px 100px 0;
+  background-image: url("../../img/way.png");
   background-repeat: no-repeat;
   background-size: auto 80%;
   background-position: 140px 140px;
@@ -161,7 +197,7 @@
   width: 448px;
 }
 
-.way .content h1 {
+.way .content__title {
   font-size: 2.7em;
   font-weight: 600;
   line-height: 1.35;
@@ -169,7 +205,7 @@
   margin: 0 0 23px 0;
 }
 
-.way .content p {
+.way .content__subtitle {
   font-size: 1.38em;
   font-family: serif;
   line-height: 1.5;
@@ -177,18 +213,18 @@
 }
 
 @media screen and (max-width: 576px) {
-  .way .content p {
+  .way .content__subtitle {
     text-align: justify;
   }
 }
 
-.way .content .orange {
+.way .content__button {
   margin: 41px 0 0 0;
   padding: 14px 40px;
 }
 
 @media screen and (max-width: 576px) {
-  .way .content .orange {
+  .way .content__button {
     margin: 20px calc(50% - 88px);
   }
 }
@@ -224,6 +260,24 @@
   }
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .finder {
   width: 100%;
   background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
@@ -233,24 +287,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 188px;
-}
-
-.finder .explore {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 188px;
 }
 
-.finder .explore h1 {
+.finder__header {
   width: 470px;
   padding-top: 69px;
   font-family: serif;
@@ -262,14 +306,14 @@
 }
 
 @media screen and (max-width: 576px) {
-  .finder .explore h1 {
+  .finder__header {
     font-size: 2em;
     width: 100%;
     padding: 69px 50px 0;
   }
 }
 
-.finder .explore .input {
+.finder .input {
   width: 470px;
   height: auto;
   display: -webkit-box;
@@ -286,10 +330,10 @@
       flex-wrap: wrap;
 }
 
-.finder .explore .input h1 {
+.finder .input__title {
   width: 100%;
   padding: 72px 0 0 2px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 1.6em;
   letter-spacing: -0.1px;
@@ -298,13 +342,13 @@
 }
 
 @media screen and (max-width: 576px) {
-  .finder .explore .input h1 {
+  .finder .input__title {
     font-size: 1em;
     padding-bottom: 0;
   }
 }
 
-.finder .explore .input__line {
+.finder .input__line {
   margin: 20px 0 50px 3px;
   width: 34px;
   background-color: #202336;
@@ -312,12 +356,12 @@
 }
 
 @media screen and (max-width: 576px) {
-  .finder .explore .input__line {
+  .finder .input__line {
     margin: 20px 0;
   }
 }
 
-.finder .explore .input form {
+.finder .input .form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,7 +377,7 @@
       flex-wrap: wrap;
 }
 
-.finder .explore .input form .item {
+.finder .input .form__item {
   width: calc(50% - 10px);
   height: 50px;
   padding: 0 31px;
@@ -343,7 +387,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .finder .explore .input form .item {
+  .finder .input .form__item {
     width: 100%;
     padding: 1px 10px;
     margin: 10px 0 0;
@@ -351,7 +395,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .finder .explore .input {
+  .finder .input {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -360,31 +404,19 @@
   }
 }
 
-.finder .explore .orange {
+.finder .explore {
   margin: 20px 0;
   padding: 15.5px 60px;
 }
 
 @media screen and (max-width: 576px) {
-  .finder .explore .orange {
+  .finder .explore {
     margin: 20px auto;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .finder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     padding-left: 60px;
     background-size: auto 80%;
   }
@@ -392,11 +424,53 @@
 
 @media screen and (max-width: 992px) {
   .finder {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-image: none;
     padding: 0;
   }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header {
@@ -477,23 +551,25 @@
   z-index: 3;
 }
 
-.header .nav-bar .menu__btn > span, .header .nav-bar .menu__btn > span::before, .header .nav-bar .menu__btn > span::after {
+.header .nav-bar .menu__btn > span,
+.header .nav-bar .menu__btn > span::before,
+.header .nav-bar .menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #fb8f1d;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 
 .header .nav-bar .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
 
 .header .nav-bar .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 
@@ -523,7 +599,7 @@
   width: auto;
   padding: 17px 19px 0;
   font-size: 1.1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.322);
 }
@@ -551,23 +627,23 @@
     margin: 0 0 0 20px;
     text-align: left;
     color: #808080;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4em;
     font-weight: 600;
     text-decoration: none;
-    -webkit-transition-duration: .25s;
-            transition-duration: .25s;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
   .header .nav-bar .menu .nav__item:hover {
     color: #fb8f1d;
   }
 }
 
-.header .nav-bar .menu .nav__button .white {
+.header .nav-bar .menu .nav__button .login {
   padding: 12px 43px;
 }
 
-.header .nav-bar .menu .nav__button .orange {
+.header .nav-bar .menu .nav__button .register {
   padding: 12px 35px;
 }
 
@@ -605,16 +681,16 @@
     margin: 0;
     padding: 100px 0 50px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: #eceff1;
     -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
             box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-    -webkit-transition-duration: .25s;
-            transition-duration: .25s;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
     z-index: 2;
   }
 }
 
-.header .nav-bar .menu .menu__shadow {
+.header .nav-bar .menu__shadow {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -624,12 +700,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.322);
   z-index: 1;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media screen and (min-width: 1200px) {
-  .header .nav-bar .menu .menu__shadow {
+  .header .nav-bar .menu__shadow {
     display: none;
   }
 }
@@ -646,28 +722,46 @@
   }
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.js-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 button {
   margin: 1px 0 9px 17px;
   font-size: 1.1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   border-radius: 10px;
   border: 1px solid #fb8f1d;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 button:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
-.white {
+.white-button {
   color: #fb8f1d;
   -webkit-box-shadow: 1px 1px #fb8f1d;
           box-shadow: 1px 1px #fb8f1d;
 }
 
-.white:hover {
+.white-button:hover {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: #1abe84;
@@ -678,37 +772,37 @@ button:active {
   cursor: pointer;
 }
 
-.white:not(:hover) {
-  -webkit-transition: 1s;
-  transition: 1s;
+.white-button:not(:hover) {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media screen and (max-width: 992px) {
-  .white {
+  .white-button {
     padding: 12px 60px;
   }
 }
 
-.orange {
+.orange-button {
   color: white;
   background-color: #fb8f1d;
 }
 
-.orange:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
+.orange-button:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   background-color: #1abe84;
   border: 1px solid #1abe84;
   cursor: pointer;
 }
 
-.orange:not(:hover) {
-  -webkit-transition: 1s;
-  transition: 1s;
+.orange-button:not(:hover) {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media screen and (max-width: 992px) {
-  .orange {
+  .orange-button {
     padding: 12px 50px;
   }
 }

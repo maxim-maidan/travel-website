@@ -1,76 +1,75 @@
-@import"constants";
-.way{
-    width: 100%;
-    height: auto;
+@import "constants";
+.way {
+  width: 100%;
+  height: auto;
 
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 
-    padding: 410px 171px 100px 0;
+  padding: 310px 171px 100px 0;
 
-	background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
-	background-repeat: no-repeat;
-	background-size: auto 80%;
-    background-position: 140px 140px;
-    
-    .content{
-        width:448px;
-        h1{
-            font-size: $medium-title;
-            font-weight: 600;
-            line-height: 1.35;
-            color: $black;
+  background-image: url("../../img/way.png");
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: 140px 140px;
 
-            margin: 0 0 23px 0;
-        }
-        p{
-            font-size: $way-subtitle;
-            font-family: serif;;
-            line-height: 1.5;
-            color: $gray;
+  .content {
+    width: 448px;
+    &__title {
+      font-size: $medium-title;
+      font-weight: 600;
+      line-height: 1.35;
+      color: $black;
 
-            @media screen and (max-width:576px){
-                &{
-                    text-align: justify;
-                }
-            }
-        }
-        .orange{
-            margin:41px 0 0 0;
-            padding: 14px 40px;
-
-            @media screen and (max-width:576px){
-                &{
-                    margin: 20px calc(50% - 88px);
-                }
-            }
-        }
-
-        @media screen and (max-width:992px){
-            &{
-                width: 470px;
-            }
-        }
-        @media screen and (max-width:576px){
-            &{
-                width: calc(100% - 100px);
-                margin: 0 50px;
-            }
-        }
+      margin: 0 0 23px 0;
     }
-    @media screen and (max-width:1200px){
-        &{
-            padding: 200px 70px 100px 0;
-            background-position: 50px 150px ;
-            background-size: auto 60%;
+    &__subtitle {
+      font-size: $way-subtitle;
+      font-family: serif;
+      line-height: 1.5;
+      color: $gray;
 
+      @media screen and (max-width: 576px) {
+        & {
+          text-align: justify;
         }
+      }
     }
-    @media screen and (max-width:992px){
-        &{
-            padding: 100px 0;
-            justify-content: center;
-            background: none ;
+    &__button {
+      margin: 41px 0 0 0;
+      padding: 14px 40px;
+
+      @media screen and (max-width: 576px) {
+        & {
+          margin: 20px calc(50% - 88px);
         }
+      }
     }
+
+    @media screen and (max-width: 992px) {
+      & {
+        width: 470px;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      & {
+        width: calc(100% - 100px);
+        margin: 0 50px;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    & {
+      padding: 200px 70px 100px 0;
+      background-position: 50px 150px;
+      background-size: auto 60%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    & {
+      padding: 100px 0;
+      justify-content: center;
+      background: none;
+    }
+  }
 }
