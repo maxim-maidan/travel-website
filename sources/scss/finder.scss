@@ -2,11 +2,11 @@
 .finder {
   width: 100%;
 
-  background-image: url("https://github.com/maxim-maidan/travel-website/blob/finder/img/explore-and-travel.png?raw=true");
+  background-image: url("../../img/explore-and-travel.png");
   background-repeat: no-repeat;
   background-size: auto 90%;
   background-position: right;
-  
+
   padding-left: $padding-left;
 
   &__header {
@@ -102,7 +102,7 @@
       }
     }
   }
-  
+
   @media screen and (max-width: 1200px) {
     & {
       padding-left: 60px;
@@ -112,10 +112,12 @@
   }
   @media screen and (max-width: 992px) {
     & {
-	  flex-direction: row;
-	  flex-wrap: wrap;
       justify-content: space-around;
       background-image: none;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    & {
       padding: 0;
     }
   }

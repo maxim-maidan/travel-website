@@ -12,14 +12,14 @@
 
     .content{
         width:450px;
-        h1{
+        &__title{
             font-size: $medium-title;
             font-weight: 600;
             line-height: 1.35;
             letter-spacing: 0.4px;
             color: $black;
             
-            margin: 0 0 20px 0;
+            margin-bottom: 20px;
 
             @media screen and (max-width:576px){
                 &{
@@ -27,7 +27,7 @@
                 }
             }
         }
-        p{
+        &__subtitle{
             font-size: $way-subtitle;
             font-family: serif;;
             line-height: 1.5;
@@ -39,8 +39,8 @@
                 }
             }
         }
-        .orange{
-            margin:41px 0 0 3px;
+        .download{
+            margin-top:41px 0;
             padding: 14px 45px;
 
             @media screen and (max-width:576px){
@@ -60,7 +60,7 @@
                 width: calc(100% - 100px);
 
             }
-        }
+        } 
     }
     @media screen and (max-width:1200px){
         &{
