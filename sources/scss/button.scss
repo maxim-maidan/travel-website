@@ -1,57 +1,54 @@
-@import"constants";
-button{
-  margin:1px 0 9px 17px;
+@import "constants";
+button {
+  font-size: $header-fs;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 
-  font-size:$header-fs;
-  font-family: 'Roboto', sans-serif;        
-  font-weight:600;
-
-  border-radius:10px;
+  border-radius: 10px;
   border: 1px solid $orange;
 
-  background-color:$white;
-
+  background-color: $white;
 }
-button:active{
-  transform:translateY(1px);
+button:active {
+  transform: translateY(4px);
 }
-.white{
-  color:$orange;
+.white-button {
+  color: $orange;
   box-shadow: 1px 1px $orange;
 
   &:hover {
-    transition:1s;
-    background-color:$green;
-    border:1px solid $green;
-    color:white;
-    box-shadow:0 2px $green;
+    transition: 1s;
+    background-color: $green;
+    border: 1px solid $green;
+    color: white;
+    box-shadow: 0 2px $green;
     cursor: pointer;
   }
-  &:not(:hover){
-    transition:1s;
+  &:not(:hover) {
+    transition: 0.4s;
   }
-  @media screen and(max-width:992px){
-    &{
-        padding: 12px 60px;
-      }
+  @media screen and(max-width:992px) {
+    & {
+      padding: 12px 60px;
+    }
   }
 }
-.orange{
-  color:white;
-  background-color:$orange;
+.orange-button {
+  color: white;
+  background-color: $orange;
 
   &:hover {
-  transition:1s;
-  background-color:$green;
-  border:1px solid $green;
-  cursor: pointer;
+    transition: 0.4s;
+    background-color: $green;
+    border: 1px solid $green;
+    cursor: pointer;
   }
-  &:not(:hover){
-    transition:1s;
+  &:not(:hover) {
+    transition: 0.4s;
   }
-  @media screen and(max-width:992px){
-    &{
-        padding: 12px 50px;
-      }
-  } 
+  @media screen and(max-width:992px) {
+    & {
+      padding: 12px 50px;
+    }
+  }
 }
