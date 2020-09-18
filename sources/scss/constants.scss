@@ -33,9 +33,21 @@ $way-subtitle: 1.38em;
 .flex {
   display: flex;
 }
+.fd-rw {
+  flex-direction: row;
+}
+.fd-cm {
+  flex-direction: column;
+}
+.fd-rr {
+  flex-direction: row-reverse;
+}
 .jc-c {
   justify-content: center;
 }
-.js-sb {
+.jc-sb {
   justify-content: space-between;
+}
+.fw{
+  flex-wrap: wrap;
 }
