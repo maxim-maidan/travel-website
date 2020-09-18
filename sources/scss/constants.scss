@@ -38,9 +38,24 @@ $box-subtitle:1em;
 .flex {
   display: flex;
 }
+.fd-rw {
+  flex-direction: row;
+}
+.fd-cm {
+  flex-direction: column;
+}
+.fd-rr {
+  flex-direction: row-reverse;
+}
 .jc-c {
   justify-content: center;
 }
-.js-sb {
+.jc-sb {
   justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.fw{
+  flex-wrap: wrap;
 }
