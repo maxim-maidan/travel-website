@@ -9,6 +9,8 @@
   flex-direction: row;
   justify-content: space-between;
 
+  background-color: $white;
+  z-index: 5;
   &__logo {
     width: $item-height;
     height: $item-height;

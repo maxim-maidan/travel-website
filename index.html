@@ -14,19 +14,19 @@
 
 </head>
 <body>
-	<div class="header">
+	<div class="header" id="header">
 		<img class="header__logo" src="img/logo.png">
 		<div class="nav-bar">
 		    <div class="menu">
 		        <input id="menu__toggle" type="checkbox" />
-		        <label class="menu__btn" for="menu__toggle">
+				<label id="menu__btn" class="menu__btn" for="menu__toggle">
 		            <span></span>
 		        </label>
 				<nav class="nav">
-					<div class="nav__item nav__item--active">Home</div>
-					<div class="nav__item">Destinations</div>
-					<div class="nav__item">About</div>
-					<div class="nav__item">Partner</div>
+					<div id="home" onclick="makeActive(id)" class="nav__item nav__item--active">Home</div>
+					<div id="destinations" onclick="makeActive(id)" class="nav__item">Destinations</div>
+					<div id="about" onclick="makeActive(id)" class="nav__item">About</div>
+					<div id="partner" onclick="makeActive(id)" class="nav__item">Partner</div>
 					<div class="nav__button">
 						<button class="login white-button">Login</button>
 						<button class="register orange-button">Register</button>
@@ -37,7 +37,7 @@
 		</div>
 	</div>
 
-	<div class="finder flex fd-cm">
+	<div id="finder" class="finder flex fd-cm">
 			<h1 class="finder__header">Explore and Travel</h1>
 			<div class="input flex fd-rw jc-sb fw">
 				<h1 class="input__title">Holiday finder</h1>
@@ -226,5 +226,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="sources/js/slider.js"></script>
+	<script type="text/javascript" src="sources/js/index.js"></script>
 </body>
 </html>
