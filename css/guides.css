@@ -1,0 +1,128 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fd-rw {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fd-cm {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fd-rr {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fw {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.guides {
+  width: 100%;
+  height: auto;
+  padding: 167px 0 200px 237px;
+  background-image: url(../../img/guides.png), url(../../img/circle.png), url(../../img/plus.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto 85%, auto auto, auto auto;
+  background-position: right 135px top 10px, left 260px top 90px, right 50px top 40px;
+}
+
+.guides .content {
+  width: 450px;
+}
+
+.guides .content__title {
+  font-size: 2.7em;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.4px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .guides .content__title {
+    font-size: 2em;
+  }
+}
+
+.guides .content__subtitle {
+  font-size: 1.38em;
+  font-family: serif;
+  line-height: 1.5;
+  color: #808080;
+}
+
+@media screen and (max-width: 576px) {
+  .guides .content__subtitle {
+    text-align: justify;
+  }
+}
+
+.guides .content .download {
+  margin-top: 41px 0;
+  padding: 14px 45px;
+}
+
+@media screen and (max-width: 576px) {
+  .guides .content .download {
+    margin: 20px calc(50% - 88px) 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .guides .content {
+    width: 470px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .guides .content {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .guides {
+    padding: 100px 0 100px 50px;
+    background-position: right 50px top 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .guides {
+    background: none;
+    padding: 100px 0;
+  }
+}
