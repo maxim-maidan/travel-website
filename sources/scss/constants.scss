@@ -27,9 +27,14 @@ $select-fs: 1.15em;
 $select-phone: 0.7em;
 
 //--way--//
-$way-title: 2.7em;
+$medium-title: 2.7em;
 $way-subtitle: 1.38em;
 
+//--destinations--//
+$link-fs: 1.3em;
+$box-title:1em;
+$title-phone:2em;
+$box-subtitle:1em;
 .flex {
   display: flex;
 }
@@ -47,6 +52,9 @@ $way-subtitle: 1.38em;
 }
 .jc-sb {
   justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
 }
 .fw{
   flex-wrap: wrap;
