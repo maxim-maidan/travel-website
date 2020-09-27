@@ -923,6 +923,7 @@ button:active {
   background-color: #1abe84;
   border: 1px solid #1abe84;
   cursor: pointer;
+  box-shadow: 1px 1px #1abe84;
 }
 
 .orange-button:not(:hover) {
