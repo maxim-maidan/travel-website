@@ -32,6 +32,10 @@
           top: 0;
           transform: rotate(90deg);
         }
+        &:checked ~ .menu__btn{
+          position: fixed;
+          right:70px;
+        }
         &:checked ~ .nav {
           visibility: visible;
           top: 0;
@@ -39,7 +43,6 @@
         &:checked ~ .menu__shadow {
           visibility: visible;
         }
-
         @media screen and(min-width:992px) {
           & {
             display: none;
@@ -147,20 +150,35 @@
         }
         &__button {
           .login {
+            margin: 1px 0 9px 17px;
             padding: 12px 43px;
+
+            @media screen and (max-width: 992px) {
+              & {
+                width: 90%;
+                margin-left: 5%;
+              }
+            }
           }
           .register {
+            margin: 1px 0 9px 17px;
             padding: 12px 35px;
+
+            @media screen and (max-width: 992px) {
+              & {
+                width: 90%;
+                margin-left: 5%;
+              }
+            }
           }
           @media screen and (max-width: 992px) {
             & {
-              width: 100%;
-              padding: 150% 0 0 0;
+              padding-top: 150%;
             }
-            @media screen and (max-height: 576px) {
-              & {
-                padding: 100% 0 0 0;
-              }
+          }
+          @media screen and (max-height: 576px) {
+            & {
+              padding-top: 100%;
             }
           }
         }

@@ -1,0 +1,77 @@
+@import"constants";
+.guides{
+    width: 100%;
+    height:auto;
+
+    padding:167px 0 200px 237px;
+
+    background-image: url(../../img/guides.png), url(../../img/circle.png), url(../../img/plus.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: auto 85%, auto auto, auto auto;
+    background-position: right 135px top 10px, left 260px top 90px, right 50px top 40px ;
+
+    .content{
+        width:450px;
+        &__title{
+            font-size: $medium-title;
+            font-weight: 600;
+            line-height: 1.35;
+            letter-spacing: 0.4px;
+            color: $black;
+            
+            margin-bottom: 20px;
+
+            @media screen and (max-width:576px){
+                &{
+                    font-size: $title-phone;
+                }
+            }
+        }
+        &__subtitle{
+            font-size: $way-subtitle;
+            font-family: serif;;
+            line-height: 1.5;
+            color: $gray;
+            
+            @media screen and (max-width:576px){
+                &{
+                    text-align: justify;
+                }
+            }
+        }
+        .download{
+            margin-top:41px 0;
+            padding: 14px 45px;
+
+            @media screen and (max-width:576px){
+                &{
+                    margin: 20px calc(50% - 88px) 0;
+                }
+            }
+        }
+        @media screen and (max-width:992px){
+            &{
+                width: 470px;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width:576px){
+            &{
+                width: calc(100% - 100px);
+
+            }
+        } 
+    }
+    @media screen and (max-width:1200px){
+        &{
+            padding:100px 0 100px 50px;
+            background-position: right 50px top 10px,;
+        }
+    }
+    @media screen and (max-width:992px){
+        &{
+            background: none;
+            padding: 100px 0;
+        }
+    }
+}
