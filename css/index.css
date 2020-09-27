@@ -42,6 +42,157 @@
       justify-content: space-around;
 }
 
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fw {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 75px 0 0 175px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.footer .info {
+  width: 275px;
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.322);
+}
+
+.footer .info__logo {
+  width: 50px;
+  height: auto;
+}
+
+.footer .info__subtitle {
+  width: 300px;
+  height: auto;
+  margin-top: 25px;
+  font-family: sans-serif;
+  font-size: 1.28em;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer .info__subtitle {
+    width: 100%;
+  }
+}
+
+.footer .info__rights {
+  margin-top: 60px;
+  font-family: sans-serif;
+  font-size: 1.28em;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer .info {
+    width: 275px;
+  }
+}
+
+.footer .list {
+  width: 275px;
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+
+.footer .list__item {
+  margin-top: 23.5px;
+  font-family: "Poppins";
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.322);
+}
+
+.footer .list__item--strong {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #000000;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .list__item--strong {
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+  }
+}
+
+.footer .icons {
+  width: 93%;
+  margin-top: 55px;
+  border-top: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.footer .icons__icon {
+  font-size: 2em;
+  margin: 15px 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 0;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fd-rw {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fd-cm {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fd-rr {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fw {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -213,6 +364,12 @@
 .jc-sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fw {
@@ -451,6 +608,12 @@
       justify-content: space-around;
 }
 
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fw {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -578,6 +741,12 @@
 .jc-sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fw {
@@ -752,6 +921,12 @@
       justify-content: space-around;
 }
 
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fw {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -876,6 +1051,12 @@
 .jc-sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fw {
@@ -1054,6 +1235,12 @@
       justify-content: space-around;
 }
 
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fw {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1101,6 +1288,12 @@
 .jc-sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fw {
@@ -1419,6 +1612,12 @@
 .jc-sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.jc-cn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fw {

@@ -9,6 +9,7 @@ $menu-background:#ECEFF1;
 $white-gray:rgba(0, 0, 0, 0.322);
 $box-shadow:rgba(0, 0, 0, .2);
 $star-color:#ffbb0c;
+$footer-shadow:rgba(0, 0, 0, .02);
 
 //--header--//
 $header-fs: 1.1em;
@@ -48,6 +49,12 @@ $stories-title:1.3em;
 $stories-subtitle:1em;
 $stories-link:1.05em;
 
+//--footer--//
+$footer-subtitle:1.28em;
+$list-item:1.2em;
+$list-item-active:1.2em;
+$icons-fs:2em;
+
 .flex {
   display: flex;
 }
@@ -68,6 +75,9 @@ $stories-link:1.05em;
 }
 .jc-sa {
   justify-content: space-around;
+}
+.jc-cn {
+  justify-content: center;
 }
 .fw{
   flex-wrap: wrap;
